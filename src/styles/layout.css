@@ -120,16 +120,26 @@
 
 @media (max-width: 900px) {
   .dashboard-layout {
+    height: auto;
+    min-height: 100vh;
     flex-direction: column;
+    overflow: visible;
   }
 
   .dashboard-sidebar {
     width: 100%;
     padding: 12px;
+    height: auto;
+    overflow: visible;
   }
 
   .sidebar-nav {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dashboard-main {
+    height: auto;
+    overflow: visible;
   }
 
   .dashboard-navbar {
@@ -141,5 +151,6 @@
 
   .dashboard-content {
     padding: 14px;
+    overflow: visible;
   }
 }
